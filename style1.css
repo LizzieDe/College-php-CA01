@@ -5,12 +5,12 @@ body {
 
 img {
     border-radius: 15%;
+    padding: 20px;
 }
 
 .titleHeader {
     margin: -10px;
     text-align: center;
-    /*background-color: aqua;*/
 }
 
 h1 {
@@ -32,6 +32,8 @@ h3 {
     text-shadow: 1px 1px red;
     font-size: 1.5em;
     font-style: bold;
+    margin: 5px;
+    margin-bottom: 10px;
 }
 
 .titleText {
@@ -43,55 +45,86 @@ h3 {
 
 .dropdown {
     text-align: center;
-    /*background-color: aqua;*/
+    margin: -10px;
 }
 
 label {
     color: white;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
+/*this effects the contents of
+the drop down menu*/
 #allGenres {
     text-align: left;
-    margin: 12px;
+    font-size: 1.5em;
+    margin: 8px;
     display: inline-block;
-    padding: 7px;
+    padding: 10px 10px;
     color: red;
     background-color: black;
     border: white 1px solid;
-
 }
 
+button {
+    margin-top: 10px;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 18px;
+    align-items: center;
+}
+
+/* This effects all artists within the 'All Music' selection area in index page*/
 .allGenres {
     margin: 30px;
     background-color: black;
 }
 
+/* This effects the artists within the genre selected area in index page*/
 .selectedGenre {
-    margin: 20px;
-    padding: 15px;
     text-align: center;
     background-color: black;
-    border: red 1px solid;
 }
 
+/* This effects the div that holds a single artist in index page*/
 .selectedArtist {
     height: auto;
     margin: 15px;
-    margin-block:  10px;
-    padding: 20px;
+    margin-block: 0px;
+    margin-bottom: 40px;
+    padding: 15px;
     background-color: black;
     border: white 1px solid;
     color: white;
     display: inline-grid;
-    justify-content: center;
-    align-items: center;
+    justify-items: center;
+    align-content: center;
 }
 
+/* results page - bio information styling*/
+.artistName {
+    text-align: center;
+}
+
+/* results page - bio information styling*/
+.artistImage {
+    border: white 2px solid;
+    margin: 15px;
+    padding: 20px;
+    float: left;
+}
+
+/* results page - bio information styling*/
+.artistSound {
+    color: red;
+    font-size: 1em;
+}
+
+/* results page - audio clip styling*/
 .artistBio {
     color: white;
-}
-
-.artistSound {
-    color:white;
+    font-size: 15px;
 }

@@ -11,7 +11,6 @@
     <meta name="discription" content="This is part of a Media Systems web space where users can view a list of music artists, their Genres and some information about the artist.">
     <link rel="stylesheet" type="text/css" href="style1.css">
     <title>Beats Central</title>
-        <title>Example</title>
 </head>
 
 <body>
@@ -20,13 +19,13 @@
         <h1>Beats Central</h1>
     </div>
     <div class="titleText">
-        <p>Here you can filter artists by Genre</p>
+        <p>Select artists by Genre:</p>
     </div>
     <!--First part of 'form'-->
     <form method="POST" action="index.php">
         <!--Genre Drop Down Menu Section-->
         <div class="dropdown">
-            <label for="allGenres">Select a Genre:</label><br>
+            <label for="allGenres"></label><br>
             <select name="allGenres" id="allGenres">
                 <option value="">All Music</option>
                 <?php
@@ -41,8 +40,8 @@
             echo PHP_EOL;
             }
             ?>
-               <!--Filter button for drop down menu-->
-                <input type="submit" id="allGenres" value="Filter">
+                <!--Filter button for drop down menu-->
+                <input type="submit" id="allGenres" value="Select">
             </select>
         </div>
     </form>
@@ -67,13 +66,13 @@
                     $strippedArtist= basename($selectedGenre[$j],'.png');
                     echo '<h3>'.ucwords(str_replace('-',' ',$strippedArtist)).'</h3>';
                     echo '<img src="'.$selectedGenre[$j].'" width="200px" height="auto">';
-                    echo '<label for="selectedArtist"></label>';
+                    echo '<label class="radioButton" for="selectedArtist">Select:</label>';
                     echo '<input type="radio" value="'.$selectedGenre[$j].'" name="selectedArtist">';
-                    echo '<button type="submit" value="Submit" formaction="ca1-result.php">More Info</button>';
+                    echo '<button type="submit" value="Submit" formaction="ca1-result.php">Info</button>';
                     echo '</div>';
                 }
                 }
-               echo '</div>'; 
+               echo '</div>';
             echo PHP_EOL;
                         }   
             ?>
