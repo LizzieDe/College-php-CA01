@@ -6,7 +6,7 @@ $selectedArtist=$_POST["selectedArtist"];
 <html>
 
 <head>
-   <link rel="stylesheet" type="text/css" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="style1.css">
     <title>Artist Page</title>
 </head>
 
@@ -19,7 +19,7 @@ $selectedArtist=$_POST["selectedArtist"];
     </div>
     <div class=artistImage>
         <?php
-        echo '<img src="'.$selectedArtist.'">';
+        echo '<img src="'.$selectedArtist.'" width="400px" height="auto">';
         ?>
     </div>
     <div class=artistSound>
@@ -48,6 +48,7 @@ $selectedArtist=$_POST["selectedArtist"];
         }
         ?>
     </div>
-    <button name="home" type="submit" value="$allGenres">Home</button>
+    <button type="submit" value="submit" formaction="index.php">Home</button>
 </body>
+
 </html>
