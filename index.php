@@ -11,6 +11,7 @@
     <meta name="discription" content="This is part of a Media Systems web space where users can view a list of music artists, their Genres and some information about the artist.">
     <link rel="stylesheet" type="text/css" href="style1.css">
     <title>Beats Central</title>
+        <title>Example</title>
 </head>
 
 <body>
